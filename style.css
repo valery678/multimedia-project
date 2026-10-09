@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --ocean: #123B4A;
+    --teal: #0F766E;
+    --muted: #64748B;
+    --sand: #F1D7A8;
+    --background: #F4F8F7;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--ocean);
+    background-color: var(--background);
+}
+
+header {
+    background-color: var(--ocean);
+    color: var(--white);
+    text-align: center;
+    padding: 35px 20px 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header h1 span {
+    color: var(--sand);
+}
+
+.tagline {
+    color: #D8E5E8;
+    margin: 8px 0 22px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #7FA4AE;
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:visited {
+    color: var(--sand);
+}
+
+nav a:hover {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--teal);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--ocean);
+    margin-top: 0;
+}
+
+#overview {
+    margin-bottom: 30px;
+}
+
+.beach-card {
+    background-color: var(--white);
+    border-left: 5px solid var(--teal);
+    border-radius: 8px;
+    padding: 22px 25px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 12px rgba(18, 59, 74, 0.07);
+}
+
+.beach-card p {
+    margin-bottom: 12px;
+}
+
+.note {
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-style: italic;
+}
+
+#color-choices {
+    background-color: #E5EFED;
+    padding: 22px 25px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+#color-choices ul {
+    padding-left: 25px;
+}
+
+.emphasis {
+    color: var(--teal);
+    font-weight: 700;
+}
+
+.deemphasis {
+    color: var(--muted);
+}
+
+footer {
+    background-color: var(--ocean);
+    color: var(--white);
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0 0 8px;
+}
+
+footer a {
+    color: var(--sand);
+}
+
+footer a:visited {
+    color: #D8E5E8;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        margin: 24px auto;
+    }
+
+    .beach-card {
+        padding: 18px;
+    }
+}
